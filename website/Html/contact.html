@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luminous Industries - Contact Us</title>
+</head>
+<body>
+    <header>
+        <img src="../images/lumi.jpg.jpeg" alt="Luminous Industries logo" width="400" height="278">
+        <br>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="product.html">Products</a>
+            <a href="orderForm.html">Order Form</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Reach out to Luminous Industries for inquiries, support, or collaboration opportunities.</p>
+            
+            <div class="contact-info">
+                <h3>Company Details</h3>
+                <p><strong>Address:</strong> 123 Innovation Drive, Tech City</p>
+                <p><strong>Email:</strong> luminousindustries@gmail.com</p>
+                <p><strong>Phone:</strong> +27 60 428 7471</p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="submitContactForm.php" method="post">
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Your Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

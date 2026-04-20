@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luminous Industries - Order Form</title>
+</head>
+<body>
+    <header>
+        <img src="../images/lumi.jpg.jpeg" alt="Luminous Industries logo" width=400" height="278">
+        <br>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="product.html">Products</a>
+            <a href="orderForm.html">Order Form</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Order Form Section -->
+    <section id="order-form">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <p>Fill out the form below to order products from Luminous Industries.</p>
+            
+            <form action="submitOrder.php" method="post">
+                <!-- Customer Information -->
+                <h3>Customer Information</h3>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="address">Shipping Address:</label><br>
+                <textarea id="address" name="address" rows="3" required></textarea><br><br>
+
+                <!-- Product Selection -->
+                <h3>Product Selection</h3>
+                <label for="product">Choose a Product:</label><br>
+                <select id="product" name="product" required>
+                    <option value="">-- Select a Product --</option>
+                    <option value="Luminous Core">Luminous Core</option>
+                    <option value="Luminous Vision">Luminous Vision</option>
+                    <option value="Luminous Cloud">Luminous Cloud</option>
+                </select><br><br>
+
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+                <!-- Payment Method -->
+                <h3>Payment Method</h3>
+                <label>
+                    <input type="radio" name="payment" value="Credit Card" required> Credit Card
+                </label><br>
+                <label>
+                    <input type="radio" name="payment" value="PayPal"> PayPal
+                </label><br>
+                <label>
+                    <input type="radio" name="payment" value="Bank Transfer"> Bank Transfer
+                </label><br><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
