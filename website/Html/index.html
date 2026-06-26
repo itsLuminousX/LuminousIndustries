@@ -3,14 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Luminous Industries - Home</title>
+    <title>Luminous Industries - Innovative Solutions</title>
+    <meta name="description" content="Luminous Industries provides cutting-edge services in web design, hosting, and digital solutions.">
+    <meta name="keywords" content="Luminous Industries, web design, hosting, SEO, technology, innovative solutions">
+
+    <!-- Sitemap reference -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="../images/sitemap.xml">
+
     <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
     <header>
         <img src="../images/lumi.jpg.jpeg" alt="Luminous Industries logo" width="400" height="278">
-        <br>
-        <br>
+        <br><br>
         <nav>
             <a href="index.html">Home</a>
             <a href="aboutUs.html">About Us</a>
@@ -51,6 +56,15 @@
         </div>
     </section>
 
+    <!-- Search Section -->
+    <section id="search">
+        <div class="container">
+            <h2>Search Our Site</h2>
+            <input type="text" id="searchBox" placeholder="Type a keyword...">
+            <div id="searchResults"></div>
+        </div>
+    </section>
+
     <!-- Call to Action -->
     <section id="cta">
         <div class="container">
@@ -59,5 +73,9 @@
             <a href="orderForm.html" class="btn">Order Now</a>
         </div>
     </section>
+
+    <!-- External JS -->
+    <script src="../JavaScript/search.js"></script>
 </body>
 </html>
+
